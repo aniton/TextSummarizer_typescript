@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo);
+
+h1 {
+  color: white;
+  font-family: 'Arvo';
+}
+
+h2 {
+  color: black;
+  font-family: 'Arvo';
+}
+h5 {
+  color: black;
+  font-family: 'Arvo';
+}
+
+p {
+  color: black;
+  font-family: 'Arvo';
+}
+
+a {
+  color: black;
+  font-family: 'Arvo';
+}
+
+span {
+  color: white;
+  font-family: 'Arvo';
+}

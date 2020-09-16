@@ -10,7 +10,7 @@ function About(props) {
             <div className="row row-content">
                 <div className="col-12">
                     <h3>About Us</h3>
-                    <p>TL;DL is a Text Summarizer project, based on TEF (Technology Entrepreneurship: Foundation) course at Skoltech.</p>
+                    <p>TL;DR is a Text Summarizer project, based on TEF (Technology Entrepreneurship: Foundation) course at Skoltech.</p>
                 </div>
                 <div className="col-12">
                     <h3>Our Team</h3>

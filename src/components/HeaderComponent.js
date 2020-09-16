@@ -4,6 +4,7 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
     Form, FormGroup, Input, Label } from 'reactstrap';
     import { Control, Errors } from 'react-redux-form';
 import { NavLink } from 'react-router-dom';
+import '/Users/aniton/Documents/TL-DRwebsite/frontend/src/components/my.css';
 const required = (val) => val && val.length;
 const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 class Header extends Component {
@@ -83,38 +84,8 @@ class Header extends Component {
                                     </NavLink>
                                 </NavItem>
                             </Nav>
-                            <Nav  className="ml-auto p-2" navbar>
-                                <NavItem>
-                                    { !this.props.auth.isAuthenticated ?
-                                        <Button outline onClick={this.toggleModal} >
-                                            <span className="fa fa-sign-in fa-lg"></span> Sign in
-                                            {this.props.auth.isFetching ?
-                                                <span className="fa fa-spinner fa-pulse fa-fw"></span>
-                                                : null
-                                            }
-                                        </Button>
-                                        :
-                                        <div>
-                                        <div className="navbar-text mr-3">{this.props.auth.user.username}</div>
-                                        <Button outline onClick={this.handleLogout}>
-                                            <span className="fa fa-sign-out fa-lg"></span> Logout
-                                            {this.props.auth.isFetching ?
-                                                <span className="fa fa-spinner fa-pulse fa-fw"></span>
-                                                : null
-                                            }
-                                        </Button>
-                                        </div>
-                                    }
-                                </NavItem>
-                                </Nav>
-                                  <Nav navbar>
-                                <NavItem>
-                                        <Button outline onClick={this.toggleModal2}>
-                                            <span className="fa fa-user-o fa-lg"></span> Sign up
-                                        </Button>
-                                </NavItem>
-                            </Nav>
                         </Collapse>
+                        <h1>Text Summarizer</h1>
                     </div>
                 </Navbar>
 
